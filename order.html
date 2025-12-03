@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Order | Brew & Bite</title>
+  <link rel="stylesheet" href="order.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">☕ Brew & Bite</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="order.html">Order</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a class="cart-link" id="cart-link">🛒<span id="cart-count">0</span></a></li>
+    </ul>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="order-hero">
+    <div class="order-hero-content">
+      <h1>Order</h1>
+      <p>Rich flavors. A premium experience.</p>
+      <div class="search-filter-box">
+        <input id="search" placeholder="Search items..." />
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="coffee">Coffee</button>
+          <button class="filter-btn" data-filter="bakery">Bakery</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- PRODUCTS + CART -->
+  <main class="container">
+    <section class="products">
+      <div class="menu-grid" id="menu-grid">
+        <div class="item coffee" data-name="Espresso" data-price="120">
+          <img src="espresso.jpeg" alt="Espresso" />
+          <h3>Espresso</h3>
+          <div class="stars">★ ★ ★ ★ ★</div>
+          <div class="price-row">
+            <span class="price">₹120</span>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+
+        <div class="item coffee" data-name="Cappuccino" data-price="150">
+          <img src="cappuccino.jpeg" alt="Cappuccino" />
+          <h3>Cappuccino</h3>
+          <div class="stars">★ ★ ★ ★ ☆</div>
+          <div class="price-row">
+            <span class="price">₹150</span>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+
+        <div class="item coffee" data-name="Latte" data-price="140">
+          <img src="latte2.jpeg" alt="Latte" />
+          <h3>Latte</h3>
+          <div class="stars">★ ★ ★ ★ ★</div>
+          <div class="price-row">
+            <span class="price">₹140</span>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+
+        <div class="item bakery" data-name="Croissant" data-price="80">
+          <img src="croissant.jpeg" alt="Croissant" />
+          <h3>Croissant</h3>
+          <div class="stars">★ ★ ★ ★ ☆</div>
+          <div class="price-row">
+            <span class="price">₹80</span>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+
+        <div class="item bakery" data-name="Grilled Sandwich" data-price="100">
+          <img src="Grilled sandwich.jpeg" alt="Grilled Sandwich" />
+          <h3>Grilled Sandwich</h3>
+          <div class="stars">★ ★ ★ ★ ☆</div>
+          <div class="price-row">
+            <span class="price">₹100</span>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+
+        <div class="item bakery" data-name="Pastry" data-price="90">
+          <img src="pastry.jpeg" alt="Pastry" />
+          <h3>Pastry</h3>
+          <div class="stars">★ ★ ★  ☆ ☆</div>
+          <div class="price-row">
+            <span class="price">₹90</span>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <aside class="cart-panel">
+      <div class="cart-header">
+        <h2>Your Cart</h2>
+        <div class="mini-total">Total: ₹<span id="grand-total">0</span></div>
+      </div>
+
+      <div class="table-wrapper">
+        <table id="cart-table">
+          <thead>
+            <tr><th>Item</th><th>Price</th><th>Qty</th><th>Total</th><th></th></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <button id="checkout-btn" class="checkout-btn">Checkout</button>
+    </aside>
+  </main>
+
+  <!-- Checkout Popup -->
+  <div class="popup-container" id="popup">
+    <div class="popup">
+      <h2>Complete your order</h2>
+      <input id="cust-name" placeholder="Full name" />
+      <input id="cust-phone" placeholder="Phone number" />
+      <textarea id="cust-address" placeholder="Delivery address"></textarea>
+      <div class="popup-actions">
+        <button id="place-order" class="place-order-btn">Place Order</button>
+        <button id="close-popup" class="close-popup">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="dark-footer">
+    <p>© 2025 Brew & Bite</p>
+  </footer>
+
+  <script src="cart.js"></script>
+  <script src="order.js"></script>
+</body>
+</html>

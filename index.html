@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> ☕Brew & Bite</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--navbar-->
+  <nav class="navbar">
+    <div class="logo"> Brew & Bite</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#coffee">Coffee</a></li>
+      <li><a href="#snacks">Snacks</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="order.html" class="cart-link">🛒<span id="cart-count">0</span></a></li>
+    </ul>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </nav>
+
+  <!--hero-->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1>Brew & Bite</h1>
+      <p>Vintage café aroma, one cup at a time.</p>
+      <a href="order.html" class="btn">Order Now</a>
+    </div>
+  </section>
+
+  <!--coffee menu-->
+  <section id="coffee" class="menu">
+    <h2>Our Coffee</h2>
+    <div class="menu-grid">
+      <div class="item" data-name="Espresso" data-price="120">
+        <img src="espresso.jpeg" alt="Espresso">
+        <h3>Espresso</h3>
+        <p>Bold and rich, our classic espresso shot.</p>
+        <div class="row">
+          <span class="price">₹120</span>
+          <button class="add-btn small">Add</button>
+        </div>
+      </div>
+
+      <div class="item" data-name="Capppuccino" data-price="150">
+        <img src="cappuccino.jpeg" alt="Capppuccino">
+        <h3>Capppuccino</h3>
+        <p>Frothy perfection topped with cocoa dust.</p>
+        <div class="row">
+          <span class="price">₹150</span>
+          <button class="add-btn small">Add</button>
+        </div>
+      </div>
+
+      <div class="item" data-name="Latte" data-price="140">
+        <img src="latte2.jpeg" alt="Latte">
+        <h3>Latte</h3>
+        <p>Silky-smooth blend of milk and espresso.</p>
+        <div class="row">
+          <span class="price">₹140</span>
+          <button class="add-btn small">Add</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--snacks-->
+  <section id="snacks" class="menu">
+    <h2>Our snacks</h2>
+    <div class="menu-grid">
+      <div class="item" data-name="Croissant" data-price="80">
+        <img src="croissant.jpeg" alt="Croissant">
+        <h3>Croissant</h3>
+        <p>Flaky buttery pastry baked to perfection.</p>
+        <div class="row">
+          <span class="price">₹80</span>
+          <button class="add-btn small">Add</button>
+        </div>
+      </div>
+
+      <div class="item" data-name="Grilled Sandwich" data-price="100">
+        <img src="Grilled sandwich.jpeg" alt="Grilled Sandwich">
+        <h3>Grilled Sandwich</h3>
+        <p>Cheese & veggie-stuffed comfort classic.</p>
+        <div class="row">
+          <span class="price">₹100</span>
+          <button class="add-btn small">Add</button>
+        </div>
+      </div>
+
+      <div class="item" data-name="Pastry" data-price="90">
+        <img src="pastry.jpeg" alt="Pastry">
+        <h3>Pastry</h3>
+        <p>Soft delight filled with melting chocolate.</p>
+        <div class="row">
+          <span class="price">₹90</span>
+          <button class="add-btn small">Add</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--about-->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>Brew & Bite blends classic charm with aromatic warmth. We craft every cup and snack with care to bring you the comfort of old-world cafes in a modern experiences.</p>
+  </section>
+
+  <!--contact-->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: hello@brewandbite.com</p>
+    <p>Phone: +91 9876543210</p>
+    <a href="order.html" class="btn-outline">Order Online</a>
+  </section>
+
+  <footer>
+    <p>©2025 Brew & Bite | Handcrafted with ☕ and ❤ </p>
+  </footer>
+
+  <!--scripts-->
+  <script src="cart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
